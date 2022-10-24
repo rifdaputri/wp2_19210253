@@ -17,7 +17,7 @@ class Matakuliah extends CI_Controller
 		'required|min_length[3]', [ 'required' => 'Nama Matakuliah Harus 
 		diisi', 'min_lenght' => 'Nama terlalu pendek' ]);
 		$this->form_validation->set_rules('sks', 'SKS', 
-		'required|min_length[3]', ['required' => 'SKS Harus 
+		'required|min_length[1]', ['required' => 'SKS Harus 
 		Diisi', 'min_lenght' => 'SKS Harus Dipilih' ]); 
 		
 		if ($this->form_validation->run() != true) { 
